@@ -20,10 +20,15 @@ mv newkey.pem key.pem
 mv newcert.pem cert.pem
 mv newreq.pem req.pem
 
+echo "====== STRIPING PRIVATE KEY =============================="
+openssl rsa -in key.pem -out key_server.pem
+chmod 400 key_server.pem
+
 echo "new files:"
-echo "   key.pem"
-echo "   req.pem"
-echo "   cert.pem"
+echo "   key.pem         private key"
+echo "   req.pem         certificate request"
+echo "   cert.pem        certificate"
+echo "   key_server.pem  pasword less private key, protect this with proper file security"
 
 # alternative method
 # http://talkweb.eu/full-https-rest-server-in-node-js/

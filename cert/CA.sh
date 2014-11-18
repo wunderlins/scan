@@ -32,11 +32,12 @@
 
 if [ -z "$OPENSSL" ]; then OPENSSL=openssl; fi
 
-DAYS="-days 365"
+DAYS="-days 3650" # 10 years
 REQ="$OPENSSL req $SSLEAY_CONFIG"
 CA="$OPENSSL ca $SSLEAY_CONFIG"
 VERIFY="$OPENSSL verify"
 X509="$OPENSSL x509"
+SUBJ="/CN=scan.wunderlin.net/O=Hackers Inc LTD./C=CH"
 
 CATOP=./demoCA
 CAKEY=./cakey.pem
@@ -57,7 +58,7 @@ case $i in
     ;;
 -newreq) 
     # create a certificate request
-    $REQ -new -keyout newkey.pem -out newreq.pem $DAYS
+    $REQ -new -keyout newkey.pem -out newreq.pem -subj "$SUBJ" $DAYS
     RET=$?
     echo "Request is in newreq.pem, private key is in newkey.pem"
     ;;
@@ -86,7 +87,7 @@ case $i in
 	else
 	    echo "Making CA certificate ..."
 	    $REQ -new -x509 -keyout ${CATOP}/private/$CAKEY \
-			   -out ${CATOP}/$CACERT $DAYS
+			   -out ${CATOP}/$CACERT -subj "$SUBJ" $DAYS
 	    RET=$?
 	fi
     fi
