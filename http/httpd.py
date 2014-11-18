@@ -8,7 +8,7 @@ urls = (
 class index:
 	def GET(self):
 		# TODO do a redirect to https
-		return "Hello, world!"
+		return "<script>document.location.href = 'https://' + document.location.hostname;</script>"
 		
 if __name__ == "__main__": 
 	app = web.application(urls, globals())

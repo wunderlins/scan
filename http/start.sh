@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-./httpd.py 80
-./httpsd.py 443
+# this file needs super user privileges when binding ports below 1024!
+
+./httpd.py 80 &
+./httpsd.py 443 &
