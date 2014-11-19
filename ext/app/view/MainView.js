@@ -38,7 +38,7 @@ Ext.define('scan.view.MainView', {
             split: true,
             itemId: 'menuPanel',
             width: 150,
-            title: 'Menu',
+            title: 'Scan Station',
             items: [
                 {
                     xtype: 'menu',

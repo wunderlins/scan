@@ -27,7 +27,7 @@
                 "itemId": "menuPanel",
                 "layout|region": "west",
                 "layout|split": true,
-                "title": "Menu",
+                "title": "Scan Station",
                 "width": 150
             },
             "name": "MyPanel1",
