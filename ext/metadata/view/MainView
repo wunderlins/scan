@@ -24,10 +24,16 @@
             },
             "codeClass": null,
             "userConfig": {
+                "animCollapse": null,
+                "bodyBorder": false,
+                "collapseFirst": null,
+                "collapsible": true,
                 "itemId": "menuPanel",
                 "layout|region": "west",
-                "layout|split": true,
+                "layout|split": null,
+                "layout|splitterResize": false,
                 "title": "Scan Station",
+                "titleCollapse": true,
                 "width": 150
             },
             "name": "MyPanel1",
@@ -124,6 +130,7 @@
                     },
                     "codeClass": null,
                     "userConfig": {
+                        "bodyBorder": null,
                         "container|align": "center",
                         "container|pack": "center",
                         "itemId": "homePanel",

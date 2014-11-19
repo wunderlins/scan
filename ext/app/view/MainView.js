@@ -35,10 +35,13 @@ Ext.define('scan.view.MainView', {
         {
             xtype: 'panel',
             region: 'west',
-            split: true,
+            splitterResize: false,
             itemId: 'menuPanel',
             width: 150,
+            bodyBorder: false,
+            collapsible: true,
             title: 'Scan Station',
+            titleCollapse: true,
             items: [
                 {
                     xtype: 'menu',
