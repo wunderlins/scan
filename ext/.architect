@@ -62,7 +62,7 @@
         "topInstance": "b00ca2cc-30a6-4aa8-8cbf-e7da32068c27",
         "selectedInstance": "b00ca2cc-30a6-4aa8-8cbf-e7da32068c27"
     },
-    "editMode": "design",
+    "editMode": "code",
     "userSettings": {
         "no-cmd": false
     }
