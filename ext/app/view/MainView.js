@@ -13,102 +13,63 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('scan.view.MainView', {
-    extend: 'Ext.container.Viewport',
+Ext.define('MainWindow.view.MainView', {
+    extend: 'Ext.tab.Panel',
     alias: 'widget.mainview',
 
     requires: [
-        'scan.view.MainViewViewModel',
-        'Ext.menu.Menu',
-        'Ext.menu.Item',
-        'Ext.form.Label'
+        'MainWindow.view.MainViewViewModel',
+        'Ext.panel.Panel',
+        'Ext.tab.Tab',
+        'Ext.tab.Bar',
+        'Ext.plugin.Responsive'
     ],
+
+    config: {
+        plugins: 'viewport'
+    },
 
     viewModel: {
         type: 'mainview'
     },
-    itemId: 'mainView',
-    layout: 'border',
-    defaultListenerScope: true,
+    responsiveConfig: {
+        tall: {
+            tabPosition: 'top'
+        },
+        wide: {
+            tabPosition: 'left'
+        }
+    },
+    titleRotation: 0,
+    activeTab: 0,
+    tabRotation: 0,
 
     items: [
         {
             xtype: 'panel',
-            region: 'west',
-            splitterResize: false,
-            itemId: 'menuPanel',
-            width: 150,
-            bodyBorder: false,
-            collapsible: true,
-            title: 'Scan Station',
-            titleCollapse: true,
-            items: [
-                {
-                    xtype: 'menu',
-                    floating: false,
-                    itemId: 'menu',
-                    items: [
-                        {
-                            xtype: 'menuitem',
-                            itemId: 'home',
-                            text: 'Scans'
-                        },
-                        {
-                            xtype: 'menuitem',
-                            itemId: 'settings',
-                            text: 'Settings'
-                        }
-                    ],
-                    listeners: {
-                        click: 'onMenuClick'
-                    }
-                }
-            ]
+            title: 'Tab 1'
         },
         {
             xtype: 'panel',
-            region: 'center',
-            itemId: 'contentPanel',
-            layout: 'card',
-            items: [
-                {
-                    xtype: 'panel',
-                    itemId: 'homePanel',
-                    title: 'Scans',
-                    layout: {
-                        type: 'vbox',
-                        align: 'center',
-                        pack: 'center'
-                    },
-                    items: [
-                        {
-                            xtype: 'label',
-                            text: 'Home View'
-                        }
-                    ]
-                },
-                {
-                    xtype: 'panel',
-                    itemId: 'settingsPanel',
-                    title: 'Settings',
-                    layout: {
-                        type: 'vbox',
-                        align: 'center',
-                        pack: 'center'
-                    },
-                    items: [
-                        {
-                            xtype: 'label',
-                            text: 'Settings View'
-                        }
-                    ]
-                }
-            ]
+            title: 'Tab 2'
+        },
+        {
+            xtype: 'panel',
+            title: 'Tab 3'
         }
     ],
-
-    onMenuClick: function(menu, item, e, eOpts) {
-        location.hash = item.itemId;
+    tabBar: {
+        xtype: 'tabbar',
+        defaultAlign: 'tl-bl',
+        minWidth: 100,
+        responsiveConfig: {
+            
+        },
+        plugins: [
+            {
+                ptype: 'responsive'
+            }
+        ]
     }
 
 });

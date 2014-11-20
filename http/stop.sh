@@ -7,3 +7,5 @@ fi
 if [[ -f httpsd.pid ]]; then 
 	kill -TERM `cat httpsd.pid`
 fi
+
+rm *.pid

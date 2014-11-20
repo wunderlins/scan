@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('scan.view.MainViewViewModel', {
+Ext.define('MainWindow.view.MainViewViewModel', {
     extend: 'Ext.app.ViewModel',
     alias: 'viewmodel.mainview'
 

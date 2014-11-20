@@ -8,23 +8,24 @@
         },
         "canvasControls": {
             "viewportSize": {
-                "name": "Auto Expand",
+                "name": "Medium",
                 "builtIn": true,
-                "height": null,
-                "width": null
+                "height": 768,
+                "width": 1024
             }
         },
-        "urlPrefix": "https://localhost/static/scan",
+        "urlPrefix": "http://localhost:1841",
         "exportPath": "",
-        "lockUrlPrefix": true,
-        "buildShouldOverwriteIndex": true,
-        "generateArchitectVersion": true,
         "spacesToIndent": 4,
+        "sdkPath": "",
         "lineEnding": "LF",
         "genTimestamps": false,
         "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "projectHasEnabledWebServer": true,
+        "lockUrlPrefix": true,
         "installStatus": "Not Installed",
-        "sdkPath": "",
         "lastBuildSelection": {
             "value": "webBuild",
             "display": "Build web app"
@@ -37,18 +38,16 @@
     "framework": "ext50",
     "viewOrderMap": {
         "view": [
-            "353f0c49-9162-4dc5-8e2d-ffb09f0d3a62",
-            "e06398df-21db-494a-8ccf-784239a17dcd",
-            "e0b7feb2-75c1-4538-ad8b-f4ba408c7b59"
+            "b00ca2cc-30a6-4aa8-8cbf-e7da32068c27",
+            "ff023743-eed2-4380-9ddd-51678dded2e9",
+            "21f8e1f9-26ab-43bb-9372-4e38c33bee8d"
         ],
         "store": [],
-        "controller": [
-            "02e19093-9c6b-4222-8b96-2632f82d7303"
-        ],
+        "controller": [],
         "model": [],
         "resource": [
-            "efa3151d-f411-416b-a78d-276e3b22783a",
-            "709257d7-81bb-4897-8c02-f69c1071fe09"
+            "bc6066df-978a-41bd-99a7-e8013c20d307",
+            "089f7f81-ec19-41c1-af59-2cb1d05ad7b7"
         ],
         "app": [
             "application"

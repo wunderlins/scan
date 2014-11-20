@@ -6,10 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "controllers": [
-            "Navigation"
-        ],
-        "name": "scan",
+        "name": "MainWindow",
         "views": [
             "MainView"
         ]

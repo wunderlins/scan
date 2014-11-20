@@ -23,13 +23,10 @@ Ext.application({
     views: [
         'MainView'
     ],
-    controllers: [
-        'Navigation'
-    ],
-    name: 'scan',
+    name: 'MainWindow',
 
     launch: function() {
-        Ext.create('scan.view.MainView');
+        Ext.create('MainWindow.view.MainView', {renderTo: Ext.getBody()});
     }
 
 });

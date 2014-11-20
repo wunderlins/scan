@@ -13,7 +13,7 @@
  * Do NOT hand edit this file.
  */
 
-Ext.define('scan.view.MainViewViewController', {
+Ext.define('MainWindow.view.MainViewViewController', {
     extend: 'Ext.app.ViewController',
     alias: 'controller.mainview'
 });

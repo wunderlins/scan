@@ -14,12 +14,12 @@ class index:
 	def GET(self):
 		# open static index file, read it and return it
 		#print os.path.dirname(os.path.realpath(__file__))
-		fp = open('static/scan/index.html', 'r')
+		fp = open('static/MainWindow/index.html', 'r')
 		content = fp.read()
 		fp.close()
 		
 		# inject base tag after opening head tag
-		base = '<base href="/static/scan/" target="_blank">'
+		base = '<base href="/static/MainWindow/" target="_blank">'
 		content = content.replace("<head>", "<head>" + base);
 		
 		# sencha architect is unable to set the title tag properly, do it here! WTF
