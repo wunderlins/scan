@@ -54,7 +54,10 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Tab 1"
+                "cls": null,
+                "glyph": "xe835@glyp",
+                "title": "Queue",
+                "width": null
             },
             "name": "MyPanel",
             "designerId": "9f17559c-502d-450d-9613-dc4d20fcce0f",
@@ -79,9 +82,13 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Tab 2"
+                "glyph": "xe84f@glyp",
+                "title": "Search"
             },
             "name": "MyPanel1",
+            "configAlternates": {
+                "header": "object"
+            },
             "designerId": "4a868232-e6bf-4ad3-b7b3-bab2da325326",
             "cn": [
                 {
@@ -104,7 +111,8 @@
             },
             "codeClass": null,
             "userConfig": {
-                "title": "Tab 3"
+                "glyph": "xe838@glyp",
+                "title": "Config"
             },
             "name": "MyPanel2",
             "designerId": "f8192035-2f7f-41a5-8927-2621d905741f",
@@ -132,10 +140,8 @@
                 "defaultAlign": "tl-bl",
                 "flex": null,
                 "maxWidth": null,
-                "minWidth": 100,
-                "responsiveConfig": [
-                    "{}"
-                ]
+                "minWidth": 150,
+                "responsiveConfig": null
             },
             "name": "MyTabBar",
             "designerId": "a4411682-2abe-4c05-abbe-a52c83bddc87",

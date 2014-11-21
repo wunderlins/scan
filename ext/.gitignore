@@ -1,2 +1,4 @@
 packages/*
 resources/preview-ext-*.css
+build/.sass-cache
+build/*

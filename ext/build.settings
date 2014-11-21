@@ -1,6 +1,6 @@
 {
     "webBuild": {
         "environment": "testing",
-        "publishPath": "/home/wus/Projects/scan/http/static"
+        "publishPath": "/Users/wus/Projects/scan/http/static"
     }
 }

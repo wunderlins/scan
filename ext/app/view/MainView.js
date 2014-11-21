@@ -21,8 +21,7 @@ Ext.define('MainWindow.view.MainView', {
         'MainWindow.view.MainViewViewModel',
         'Ext.panel.Panel',
         'Ext.tab.Tab',
-        'Ext.tab.Bar',
-        'Ext.plugin.Responsive'
+        'Ext.tab.Bar'
     ],
 
     config: {
@@ -47,29 +46,24 @@ Ext.define('MainWindow.view.MainView', {
     items: [
         {
             xtype: 'panel',
-            title: 'Tab 1'
+            glyph: 'xe835@glyp',
+            title: 'Queue'
         },
         {
             xtype: 'panel',
-            title: 'Tab 2'
+            glyph: 'xe84f@glyp',
+            title: 'Search'
         },
         {
             xtype: 'panel',
-            title: 'Tab 3'
+            glyph: 'xe838@glyp',
+            title: 'Config'
         }
     ],
     tabBar: {
         xtype: 'tabbar',
         defaultAlign: 'tl-bl',
-        minWidth: 100,
-        responsiveConfig: {
-            
-        },
-        plugins: [
-            {
-                ptype: 'responsive'
-            }
-        ]
+        minWidth: 150
     }
 
 });

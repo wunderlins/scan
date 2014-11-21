@@ -7,7 +7,8 @@ CherryPyWSGIServer.ssl_certificate = "../cert/cert.pem"
 CherryPyWSGIServer.ssl_private_key = "../cert/key_server.pem"
 
 urls = (
-  '/', 'index'
+  '/', 'index',
+  '/index.html', 'index'
 )
 
 class index:
